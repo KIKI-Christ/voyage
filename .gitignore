@@ -1,0 +1,30 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers d'éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.log
+
+# Fichiers de cache
+.cache/
+node_modules/
+npm-debug.log*
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*~
+
+# Fichiers de configuration locale
+.env
+.env.local

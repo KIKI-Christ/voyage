@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de Voyage Côte d'Ivoire - Découvrez les Régions</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-airplane me-2"></i>kiki Voyage CI
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#regions">Régions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content text-white">
+                        <h1 class="display-4 fw-bold mb-4">Découvrez la Côte d'Ivoire</h1>
+                        <p class="lead mb-4">Explorez les merveilles de notre pays à travers ses régions uniques. De la culture à la nature, vivez une expérience inoubliable.</p>
+                        <div class="hero-buttons">
+                            <a href="#regions" class="btn btn-primary btn-lg me-3">Découvrir</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Régions Section -->
+    <section id="regions" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-3">Nos Régions</h2>
+                    <p class="lead text-muted">Découvrez la diversité culturelle et naturelle de la Côte d'Ivoire</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Région Abidjan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card region-card h-100">
+                        <div class="card-img-container">
+                            <img src="Images/im3.jpg" class="card-img-top" alt="Abidjan">
+                            <div class="card-overlay">
+                                <span class="badge bg-primary">Économique</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abidjan</h5>
+                            <p class="card-text">La capitale économique, ville moderne avec ses gratte-ciels, ses plages et sa vie nocturne animée.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-geo-alt text-primary me-2"></i>Plateau, Cocody, Yopougon</li>
+                                <li><i class="bi bi-star text-warning me-2"></i>Attractions: Cathédrale, Musée, Plages</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Région Yamoussoukro -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card region-card h-100">
+                        <div class="card-img-container">
+                            <img src="Images/im2.jpg" class="card-img-top" alt="Yamoussoukro">
+                            <div class="card-overlay">
+                                <span class="badge bg-success">Politique</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Yamoussoukro</h5>
+                            <p class="card-text">Capitale politique avec la célèbre Basilique Notre-Dame de la Paix, l'une des plus grandes églises du monde.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-geo-alt text-primary me-2"></i>Centre administratif</li>
+                                <li><i class="bi bi-star text-warning me-2"></i>Attractions: Basilique, Palais présidentiel</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Région San-Pédro -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card region-card h-100">
+                        <div class="card-img-container">
+                            <img src="Images/im4.jpg" class="card-img-top" alt="San-Pédro">
+                            <div class="card-overlay">
+                                <span class="badge bg-info">Portuaire</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">San-Pédro</h5>
+                            <p class="card-text">Ville portuaire dynamique avec ses plages magnifiques et ses activités nautiques.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-geo-alt text-primary me-2"></i>Sud-ouest</li>
+                                <li><i class="bi bi-star text-warning me-2"></i>Attractions: Plages, Port, Pêche</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Région Bouaké -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card region-card h-100">
+                        <div class="card-img-container">
+                            <img src="Images/im5.jpg" class="card-img-top" alt="Bouaké">
+                            <div class="card-overlay">
+                                <span class="badge bg-warning">Culturelle</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bouaké</h5>
+                            <p class="card-text">Deuxième plus grande ville du pays, riche en culture et traditions.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-geo-alt text-primary me-2"></i>Centre du pays</li>
+                                <li><i class="bi bi-star text-warning me-2"></i>Attractions: Marchés, Culture locale</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Région Man -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card region-card h-100">
+                        <div class="card-img-container">
+                            <img src="Images/im6.jpg" class="card-img-top" alt="Man">
+                            <div class="card-overlay">
+                                <span class="badge bg-secondary">Montagneuse</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Man</h5>
+                            <p class="card-text">Région montagneuse avec ses paysages verdoyants et ses cascades naturelles.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-geo-alt text-primary me-2"></i>Ouest montagneux</li>
+                                <li><i class="bi bi-star text-warning me-2"></i>Attractions: Cascades, Montagnes</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Région Korhogo -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card region-card h-100">
+                        <div class="card-img-container">
+                            <img src="Images/im8.jpg" class="card-img-top" alt="Korhogo">
+                            <div class="card-overlay">
+                                <span class="badge bg-dark">Traditionnelle</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Korhogo</h5>
+                            <p class="card-text">Cœur de la culture sénoufo avec ses traditions ancestrales et son artisanat.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-geo-alt text-primary me-2"></i>Nord du pays</li>
+                                <li><i class="bi bi-star text-warning me-2"></i>Attractions: Artisanat, Traditions</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-3">Nos Services</h2>
+                    <p class="lead text-muted">Des services complets pour votre voyage en Côte d'Ivoire</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center p-4">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-airplane-fill"></i>
+                        </div>
+                        <h5>Transport</h5>
+                        <p>Vols domestiques et internationaux, transferts aéroport, location de véhicules.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center p-4">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h5>Hébergement</h5>
+                        <p>Hôtels de luxe, auberges, résidences, sélection soigneuse pour tous les budgets.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center p-4">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-compass"></i>
+                        </div>
+                        <h5>Guides</h5>
+                        <p>Guides professionnels locaux, circuits personnalisés, découverte culturelle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold mb-3">Contactez-nous</h2>
+                        <p class="lead text-muted">Planifiez votre voyage avec nos experts</p>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="contact-info">
+                                <h5 class="mb-4">Informations de contact</h5>
+                                <div class="contact-item mb-3">
+                                    <i class="bi bi-geo-alt-fill text-primary me-3"></i>
+                                    <span>Plateau, Abidjan, Côte d'Ivoire</span>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class="bi bi-telephone-fill text-primary me-3"></i>
+                                    <span>+225 07 08 17 83 78</span>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class="bi bi-envelope-fill text-primary me-3"></i>
+                                    <span>contact@voyageci.ci</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-clock-fill text-primary me-3"></i>
+                                    <span>Lun - Ven: 8h00 - 18h00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <form class="contact-form">
+                                <div class="mb-3">
+                                    <label for="nom" class="form-label">Nom complet</label>
+                                    <input type="text" class="form-control" id="nom" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telephone" class="form-label">Téléphone</label>
+                                    <input type="tel" class="form-control" id="telephone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="region" class="form-label">Région d'intérêt</label>
+                                    <select class="form-select" id="region">
+                                        <option value="">Sélectionnez une région</option>
+                                        <option value="abidjan">Abidjan</option>
+                                        <option value="yamoussoukro">Yamoussoukro</option>
+                                        <option value="san-pedro">San-Pédro</option>
+                                        <option value="bouake">Bouaké</option>
+                                        <option value="man">Man</option>
+                                        <option value="korhogo">Korhogo</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Décrivez votre projet de voyage..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Voyage CI. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de réservation -->
+    <div class="modal fade" id="reservationModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Réservation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="reservationNom" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="reservationNom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="reservationEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="reservationEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="reservationTelephone" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="reservationTelephone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="reservationRegion" class="form-label">Région</label>
+                                <select class="form-select" id="reservationRegion" required>
+                                    <option value="">Sélectionnez une région</option>
+                                    <option value="abidjan">Abidjan</option>
+                                    <option value="yamoussoukro">Yamoussoukro</option>
+                                    <option value="san-pedro">San-Pédro</option>
+                                    <option value="bouake">Bouaké</option>
+                                    <option value="man">Man</option>
+                                    <option value="korhogo">Korhogo</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="dateDepart" class="form-label">Date de départ</label>
+                                <input type="date" class="form-control" id="dateDepart" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="dateRetour" class="form-label">Date de retour</label>
+                                <input type="date" class="form-control" id="dateRetour" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="nombrePersonnes" class="form-label">Nombre de personnes</label>
+                                <select class="form-select" id="nombrePersonnes" required>
+                                    <option value="1">1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5+">5+ personnes</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="budget" class="form-label">Budget approximatif</label>
+                                <select class="form-select" id="budget">
+                                    <option value="">Sélectionnez un budget</option>
+                                    <option value="economique">Économique (moins de 100,000 FCFA)</option>
+                                    <option value="moyen">Moyen (100,000 - 300,000 FCFA)</option>
+                                    <option value="luxe">Luxe (plus de 300,000 FCFA)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="reservationMessage" class="form-label">Demandes spéciales</label>
+                                <textarea class="form-control" id="reservationMessage" rows="3" placeholder="Précisez vos besoins particuliers..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary" onclick="submitReservation()">Confirmer la réservation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
